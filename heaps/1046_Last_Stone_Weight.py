@@ -30,5 +30,5 @@ class Solution:
 
         '''
         TC: O(n + nlogn) --> O(nlogn)
-        SC: O(n)
+        SC: O(n) --> note that since we're reusing the input, the input array counts towards Space Complexity
         '''
