@@ -22,5 +22,5 @@ class Solution:
 - we need to build up the subsequence up until the condition is broken (max - min is at most k)
 - once the condition gets broken, begin a new subsequnce at that element the previous subsequence breaks, make sure to make this new element the new current subsequence min, because the array is in sorted order, at the start of a new "subsequence" 
 - time complexity: O(nlogn + n) --> O(nlogn), because we sort and loop through the array but it gets ammortized to just O(nlogn)
-- space complexity: O(1) because we sort in place
+- space complexity: O(n), timsort (python's implementation of .sort()) uses up to O(n) space
 """
